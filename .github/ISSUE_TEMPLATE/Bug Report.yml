@@ -1,0 +1,72 @@
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! You can also report bugs in a ticket on our [Discord](https://muvi.gg/discord)
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running? (v1.XX.X, you can check it out by pressing the 3 dots on the top right corner of the app)
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: Country
+      description: What country are you in? (e.g. UK, Germany, France, etc.)
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: What operating system are you using?
+      multiple: false
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: dropdown
+    id: subscription
+    attributes:
+      label: What subscription do you have?
+      multiple: false
+      options:
+        - F1 TV Access
+        - F1 TV Pro
+        - F1 TV Premium
+        - None
+    validations:
+      required: true
+  - type: dropdown
+    id: subscription
+    attributes:
+      label: What subscription do you have?
+      multiple: false
+      options:
+        - F1 TV Access
+        - F1 TV Pro
+        - F1 TV Premium
+        - None
+    validations:
+      required: true
+  - type: textarea
+    id: troubleshooting
+    attributes:
+      label: Troubleshooting payload
+      description: If applicable, open the troubleshooting page (Bottom right -> Troubleshooting or [click here](https://muvi.gg/troubleshooting)). On that page, press `C`, it will copy some essential debug data to your clipboard, then just paste it in this box. (The data is automatically sanitized of all tokens or personal data before copying it)
+      render: shell

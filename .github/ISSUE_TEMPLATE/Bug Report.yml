@@ -40,6 +40,13 @@ body:
         - Linux
     validations:
       required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS Version
+      description: What version of your operating system are you using? (e.g. Windows 11, Windows 10, macOS Sequoia, Debian, etc.)
+    validations:
+      required: true
   - type: dropdown
     id: subscription
     attributes:

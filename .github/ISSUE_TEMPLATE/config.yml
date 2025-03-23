@@ -2,7 +2,7 @@ blank_issues_enabled: false
 contact_links:
   - name: MultiViewer's Discord
     url: https://muvi.gg/discord
-    about: Our support team is more active on Discord. If you require urgent support, please join the server and create a ticket in the #help channel.
+    about: Our support team is more active on Discord. If you require urgent support, please join the server and create a ticket in the help channel.
   - name: Feature request
     url: https://github.com/f1multiviewer/issue-tracker/discussions/new?category=ideas
     about: For ideas or feature requests

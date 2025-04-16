@@ -63,5 +63,5 @@ body:
     id: troubleshooting
     attributes:
       label: Troubleshooting payload
-      description: If applicable, open the troubleshooting page (Bottom right -> Troubleshooting or [click here](https://muvi.gg/troubleshooting)). On that page, press `C`, it will copy some essential debug data to your clipboard, then just paste it in this box. (The data is automatically sanitized of all tokens or personal data before copying it)
+      description: If applicable, open the troubleshooting page (Bottom left -> Troubleshooting or [click here](https://muvi.gg/troubleshooting) after opening the MultiViewer app). On that page, press `C`, it will copy some essential debug data to your clipboard, then just paste it in this box. (The data is automatically sanitized of all tokens or personal data before copying it)
       render: shell

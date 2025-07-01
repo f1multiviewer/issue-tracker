@@ -2,6 +2,7 @@ name: Bug Report
 description: File a bug report.
 title: "[Bug]: "
 labels: ["bug"]
+assignees: ["f1multiviewer", "jeppeolesen", "LapsTimeOFF"]
 body:
   - type: markdown
     attributes:
@@ -19,7 +20,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: What version of our software are you running? (v1.XX.X, you can check it out by pressing the 3 dots on the top right corner of the app)
+      description: What version of our software are you running? (vX.XX.X, you can check it out by pressing the 3 dots on the top right corner of the app)
     validations:
       required: true
   - type: input

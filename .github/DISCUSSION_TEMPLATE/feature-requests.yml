@@ -18,10 +18,9 @@ body:
   - type: markdown
     validations:
       required: true
-    attributes: 
-      value: |
-        Share your idea for a new feature or improvement! This space is for **open-ended conversations** to help shape the future of the project.
+    value: |
+      Share your idea for a new feature or improvement! This space is for **open-ended conversations** to help shape the future of the project.
 
-        Be as descriptive and specific as possible. If you're requesting a visual change or implementation, please provide a screenshot of the interface you'd like to have changed.
+      Be as descriptive and specific as possible. If you're requesting a visual change or implementation, please provide a screenshot of the interface you'd like to have changed.
 
-        If you have multiple ideas, please split them in separate feature requests.
+      If you have multiple ideas, please split them in separate feature requests.

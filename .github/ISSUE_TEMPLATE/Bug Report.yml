@@ -8,8 +8,7 @@ body:
       value: |
         Thank you for taking the time to fill out this bug report. Please use a descriptive title that clearly summarizes the issue.
         
-        A good title helps us quickly understand the nature of the bug and prioritize it. Try to include what’s broken and where it happens — for example:
-        "Streams stuck on loading screen on Windows 11" instead of just "MultiViewer is not working".
+        A good title helps us quickly understand the nature of the bug and prioritize it. Try to include what’s broken and where it happens — for example: "Streams stuck on loading screen on Windows 11" instead of just "MultiViewer is not working".
   
   - type: dropdown
     id: service
@@ -25,6 +24,21 @@ body:
         - Other
     validations:
       required: true
+
+  - type: dropdown
+    id: subscription
+    attributes:
+      label: What subscription do you have?
+      description: "If you're submitting a bug for a service other than F1 TV, please select N/A"
+      multiple: false
+      options:
+        - F1 TV Access
+        - F1 TV Pro
+        - F1 TV Premium
+        - "I don't have an F1 TV subscription"
+        - N/A
+    validations:
+      required: true
   
   - type: textarea
     id: what-happened
@@ -34,6 +48,12 @@ body:
       placeholder: Tell us what you see!
     validations:
       required: true
+
+  - type: textarea
+    id: screeshots
+    attributes:
+      label: Screenshots
+      description: "Please provide screenshots of the issues you're experiencing"
   
   - type: input
     id: version
@@ -71,24 +91,9 @@ body:
     validations:
       required: true
   
-  - type: dropdown
-    id: subscription
-    attributes:
-      label: What subscription do you have?
-      description: "If you're submitting a bug for a service other than F1 TV, please select N/A"
-      multiple: false
-      options:
-        - F1 TV Access
-        - F1 TV Pro
-        - F1 TV Premium
-        - "I don't have an F1 TV subscription"
-        - N/A
-    validations:
-      required: true
-  
   - type: textarea
     id: troubleshooting
     attributes:
       label: Troubleshooting payload
-      description: If applicable, open the troubleshooting page (Bottom left -> Troubleshooting or [click here](https://muvi.gg/troubleshooting) after opening the MultiViewer app). On that page, press `C`, it will copy some essential debug data to your clipboard, then just paste it in this box. (The data is automatically sanitized of all tokens or personal data before copying it)
+      description: Open the troubleshooting page (Bottom left -> Troubleshooting or [click here](https://muvi.gg/troubleshooting) after opening the MultiViewer app). On that page, press `C`, it will copy some essential debug data to your clipboard, then just paste it in this box. (The data is automatically sanitized of all tokens or personal data before copying it)
       render: shell

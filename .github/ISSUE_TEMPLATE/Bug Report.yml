@@ -53,7 +53,7 @@ body:
     id: screeshots
     attributes:
       label: Screenshots
-      description: "Please provide screenshots of the issues you're experiencing"
+      description: "Please provide screenshots of the issues you're experiencing. You can simply drag'n'drop the screenshots to this field to upload."
   
   - type: input
     id: version

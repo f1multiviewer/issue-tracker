@@ -1,13 +1,15 @@
 name: Bug Report
 description: File a bug report.
-title: "[Bug]: "
 labels: ["bug"]
 assignees: ["f1multiviewer", "jeppeolesen", "LapsTimeOFF"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report! You can also report bugs in a ticket on our [Discord](https://muvi.gg/discord)
+        Thank you for taking the time to fill out this bug report. Please use a descriptive title that clearly summarizes the issue.
+        
+        A good title helps us quickly understand the nature of the bug and prioritize it. Try to include what’s broken and where it happens — for example:
+        "Streams stuck on loading screen on Windows 11" instead of just "MultiViewer is not working".
   
   - type: dropdown
     id: service

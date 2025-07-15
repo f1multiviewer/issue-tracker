@@ -21,6 +21,8 @@ body:
         - NASCAR
         - WEC
         - Other
+      validations:
+        required: true
   
   - type: textarea
     id: what-happened

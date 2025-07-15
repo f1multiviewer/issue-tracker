@@ -71,17 +71,16 @@ body:
     id: subscription
     attributes:
       label: What subscription do you have?
+      description: "If you're submitting a bug for a service other than F1 TV, please select N/A"
       multiple: false
       options:
         - F1 TV Access
         - F1 TV Pro
         - F1 TV Premium
-        - "I don't have a subscription"
+        - "I don't have an F1 TV subscription"
+        - N/A
     validations:
       required: true
-    if:
-      field: service
-      equals: F1 TV
   
   - type: textarea
     id: troubleshooting

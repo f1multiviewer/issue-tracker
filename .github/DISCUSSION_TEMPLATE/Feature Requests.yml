@@ -1,5 +1,3 @@
-name: Feature Request
-description: Propose a new idea or improvement to discuss with the team and community.
 labels: ['feature request']
 body:
   - type: dropdown

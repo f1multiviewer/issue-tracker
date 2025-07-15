@@ -44,17 +44,11 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Be as specific as posible. What happened? What were you expecting would happen? What actions did you make to get the bug?
+      description: "Be as specific as posible. What happened? What were you expecting would happen? What actions did you make to get the bug? Please include screenshots of the issues you're experiencing."
       placeholder: Tell us what you see!
     validations:
       required: true
 
-  - type: textarea
-    id: screeshots
-    attributes:
-      label: Screenshots
-      description: "Please provide screenshots of the issues you're experiencing. You can simply drag'n'drop the screenshots to this field to upload."
-  
   - type: input
     id: version
     attributes:
@@ -90,7 +84,7 @@ body:
       description: What version of your operating system are you using? (e.g. Windows 11, Windows 10, macOS Sequoia, Debian, etc.)
     validations:
       required: true
-  
+
   - type: textarea
     id: troubleshooting
     attributes:

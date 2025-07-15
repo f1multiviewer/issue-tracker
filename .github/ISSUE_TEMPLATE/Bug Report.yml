@@ -8,14 +8,29 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report! You can also report bugs in a ticket on our [Discord](https://muvi.gg/discord)
+  
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service
+      description: Which streaming service are you reporting a bug for?
+      multiple: false
+      options:
+        - F1 TV
+        - IndyCar
+        - NASCAR
+        - WEC
+        - Other
+  
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
+      description: Be as specific as posible. What happened? What were you expecting would happen? What actions did you make to get the bug?
       placeholder: Tell us what you see!
     validations:
       required: true
+  
   - type: input
     id: version
     attributes:
@@ -23,6 +38,7 @@ body:
       description: What version of our software are you running? (vX.XX.X, you can check it out by pressing the 3 dots on the top right corner of the app)
     validations:
       required: true
+  
   - type: input
     id: region
     attributes:
@@ -30,6 +46,7 @@ body:
       description: What country are you in? (e.g. UK, Germany, France, etc.)
     validations:
       required: true
+  
   - type: dropdown
     id: os
     attributes:
@@ -41,6 +58,7 @@ body:
         - Linux
     validations:
       required: true
+  
   - type: input
     id: os-version
     attributes:
@@ -48,6 +66,7 @@ body:
       description: What version of your operating system are you using? (e.g. Windows 11, Windows 10, macOS Sequoia, Debian, etc.)
     validations:
       required: true
+  
   - type: dropdown
     id: subscription
     attributes:
@@ -57,9 +76,13 @@ body:
         - F1 TV Access
         - F1 TV Pro
         - F1 TV Premium
-        - N/A
+        - "I don't have a subscription"
     validations:
       required: true
+    if:
+      field: service
+      equals: F1 TV
+  
   - type: textarea
     id: troubleshooting
     attributes:

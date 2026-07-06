@@ -43,7 +43,7 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: "Be as specific as posible. What happened? What were you expecting would happen? What actions did you make to get the bug? Please include screenshots of the issues you're experiencing."
+      description: "Be as specific as possible. What happened? What were you expecting would happen? What actions did you take to get the bug? Please include screenshots of the issues you're experiencing."
       placeholder: Tell us what you see!
     validations:
       required: true
@@ -52,7 +52,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: What version of our software are you running? (vX.XX.X, you can check it out by pressing the 3 dots on the top right corner of the app)
+      description: What version of our software are you running? (vX.XX.X, you can check it out by pressing the 3 dots in the top right corner of the app)
     validations:
       required: true
   

@@ -23,6 +23,6 @@ body:
     
         Be as descriptive and specific as possible. If you're requesting a visual change or implementation, please provide a screenshot of the interface you'd like to have changed.
     
-        If you have multiple ideas, please split them in separate feature requests.
+        If you have multiple ideas, please split them into separate feature requests.
     validations:
       required: true
